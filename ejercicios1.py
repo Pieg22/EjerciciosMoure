@@ -30,3 +30,37 @@ son los tipos de datos en Python.
 Los tipos de datos en Python son una forma de clasificar los diferentes tipos de valores que pueden ser almacenados y manipulados en un programa. Python tiene varios tipos de datos incorporados, incluyendo enteros (int), números de punto flotante (float), cadenas de texto (str), listas (list), tuplas (tuple), conjuntos (set) y diccionarios (dict). Cada tipo de dato tiene sus propias características y métodos asociados, lo que permite a los programadores elegir el tipo más adecuado para sus necesidades específicas. Además, Python es un lenguaje dinámicamente tipado, lo que significa que no es necesario declarar el tipo de dato de una variable al momento de su creación.
 """
 
+"""
+6. Imprime el resultado de concatenar dos cadenas de texto,
+por ejemplo: "Hola" y "Mundo".
+"""
+
+p = ("Hola")
+H = ("world")
+print(p + H)    
+
+#o bien : 
+
+print("Hola" + "Mundo") 
+
+#Con un espacio
+print("Hola" + " " + "Mundo")
+
+
+print("Hola" + " " + "Mundo")
+
+"""7. Crea una variable para almacenar tu nombre, otra para tu
+edad, e imprime ambas en la misma línea."""
+
+name = "Pere"
+age = 31
+print("Mi nombre es " + name + "mi edad es" + str(age))
+
+
+
+
+
+
+
+
+
