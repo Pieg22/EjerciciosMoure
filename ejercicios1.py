@@ -54,7 +54,39 @@ edad, e imprime ambas en la misma línea."""
 
 name = "Pere"
 age = 31
-print("Mi nombre es " + name + "mi edad es" + str(age))
+print("Mi nombre es " + name + " mi edad es " + str(age))
+
+""" 8. Escribe un programa que solicite al usuario su nombre y
+lo imprima junto con un saludo.
+"""
+
+nombre = input("Name:")
+
+print( " Hola que tal " + nombre + " un saludo guapo ")
+
+#He creado una variable "nombre" y después hemos imrpimido la variable + un print fijo . 
+
+"""9. Usa print() para mostrar el resultado de la suma de dos
+números enteros y el tipo de dato resultante. 
+""" 
+
+print( 12 + 12 )
+print(type(12+12))
+
+"""10. Comenta el código del Ejercicio 9, y explica qué
+hace cada línea usando comentarios de una sola línea. 
+"""
+# El print( 12 + 12 ) imprime el calculo de la suma , el + opera la suma entre los dos enteros . Print(type(12+12) nos dice que tipo de dato es esa suma.
+ 
+
+
+
+
+
+
+
+
+
 
 
 
