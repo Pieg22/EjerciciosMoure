@@ -76,8 +76,16 @@ print(type(12+12))
 """10. Comenta el código del Ejercicio 9, y explica qué
 hace cada línea usando comentarios de una sola línea. 
 """
+
 # El print( 12 + 12 ) imprime el calculo de la suma , el + opera la suma entre los dos enteros . Print(type(12+12) nos dice que tipo de dato es esa suma.
- 
+#Initials codedex
+print("PPPP    BBBB")
+print("P    P  B    B")
+print("P    P  B    B")
+print("PPPP    BBBB")
+print("P       B     B")
+print("P       B     B") 
+print("P       B BBBB")
 
 
 
