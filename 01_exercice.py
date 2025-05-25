@@ -72,6 +72,12 @@ números enteros y el tipo de dato resultante.
 
 print( 12 + 12 )
 print(type(12+12))
+#Moure hizo : 
+
+result = 5 + 10
+print("El resultado es:", result)
+print("El tipo de dato del resultado es:", type(result))
+
 
 """10. Comenta el código del Ejercicio 9, y explica qué
 hace cada línea usando comentarios de una sola línea. 

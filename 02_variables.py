@@ -27,5 +27,48 @@ eres estudiante o no. Usa True o False según corresponda
 e imprímela.
 """
 
+is_student = input("Eres estudiante?")
+print(is_student)
+
+if is_student == "yes" : 
+    print("Si es estudiante")
+elif is_student == "no" : 
+    print("No es estudiante")
+
+else:
+    print("Respuesta no válida.Introduce yes or no . ")
+    
+#Con este último me he flipado , pero no quería hacerlo tan basic . sorry
+
+"""4. Usa la funciÃ³n len() para calcular cuÃ¡ntos caracteres tiene tu nombre completo, almacenado en una variable."""
+
+nombre = len("PereBerceroTrigell")
+print(nombre)
+
+
+"""5. Declara tres variables en una sola lÃ­nea que representen tu nombre, apellido y ciudad de origen. Luego, imprime estos valores."""
+#Esto de imprimir las variables en la misma línea , creo que dijo moure que no era la mejor práctica . pero...
+
+name , second_name , city = "Pere" , "Bercero" , "Sentmenat"
+print(name , second_name , city)
+
+"""# 6. Usa la funciÃ³n input() para solicitar al usuario su color favorito y almacÃ©nalo en una variable color. Luego, imprime el valor ingresado."""
+
+color = input("Cual es tu color favorito?") 
+
+print(color)
+
+
+
+
+
+
+
+    
+    
+
+
+
+
 
 
