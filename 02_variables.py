@@ -7,6 +7,9 @@ height: un número flotante que represente tu altura.
 Imprime cada variable en una línea separada.
 """
 
+import math
+
+
 name = "Pere"
 age = 31
 height = 1,80
@@ -58,7 +61,40 @@ color = input("Cual es tu color favorito?")
 
 print(color)
 
+#Pequeño pharenseis of codedex , for calculate de conversation of F to Celsius ofc . 
 
+# Write code below 💖
+t_actual = 74
+#celsius?
+celsius = t_actual - 32
+result = celsius / 1.8
+print(result) 
+
+# Lo podría haber hecho todo en la misma línea ofc  : like : 
+#celsisus+result= (t_actual - 32) / 1.8
+
+#Calculando el Body Mass Index de locos , BMI = mass(kg)/highm2. 
+
+mass = 65 #kg
+height = 1,80 #meters
+result = 1.80**2 
+
+bmi = mass/result
+
+print(bmi)
+
+#Creando pythagoras en python 
+
+
+ask_a = int(input(" Introduce valor de A "))
+print(ask_a)
+
+ask_b = int(input(" Introduce value of B "))
+print(ask_b)
+
+c = math.sqrt(ask_a**2 + ask_b**2)
+
+print(c)
 
 
 
