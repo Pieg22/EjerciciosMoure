@@ -92,9 +92,11 @@ print(ask_a)
 ask_b = int(input(" Introduce value of B "))
 print(ask_b)
 
-c = math.sqrt(ask_a**2 + ask_b**2)
+c = (ask_a**2 + ask_b**2)
 
-print(c)
+result = (c**0.5)
+
+print(result)
 
 
 
