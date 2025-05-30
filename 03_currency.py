@@ -12,9 +12,13 @@ RB = input(" Do you have some RB? tell me the amount ")
 
 # Intercambio de moneda COM (Colombian Peso Money)
 
-COM =( CO*0.00024)  
-PEM =( 0,28 * PE )
-RBM =( 0,17 * RB) 
+COM = (0.00024)
+PEM =( 0,28 )
+RBM =( 0,17 ) 
+
+resultCOM = COM * CO 
+resultPEM = PEM * PE
+resultRBM = RBM * RB
 
 #Sum results and print in USD 
 
