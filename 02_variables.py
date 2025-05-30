@@ -98,6 +98,54 @@ result = (c**0.5)
 
 print(result)
 
+#Bonus: If you are looking for a harder challenge, try the Quadratic formula! 
+
+
+a = int(input(" Introduce valor de A "))
+print(a)
+
+b = int(input(" Introduce value of B "))
+print(b)
+
+c= int(input(" Introduce value of C"))
+print(c)
+
+
+x1 = (-b +(b*b - 4*a*c)**0.5) /(2 * a)  
+
+print(x1) 
+
+x2 = (-b -(b*b - 4*a*c)**0.5) /(2 * a)  
+
+print(x2)
+
+# 7. Declara una variable fruit e inicialÃ­zala con un valor. Luego, cambia el valor de la fruta a otro diferente y vuelve a imprimirla.
+
+fruit = 5  #este es int
+print(fruit)
+
+fruit = "Manzana" #Este es 'str'
+
+print(fruit)
+
+# 8. Convierte un nÃºmero decimal, almacenado en la variable price, a un nÃºmero entero y luego imprÃ­melo.
+
+price = 20.96 #Float 
+
+print(int(price))
+
+## 9. Declara una variable llamada address_len y almacena en ella la cantidad de caracteres de una direcciÃ³n usando la funciÃ³n len(). Imprime el resultado.
+
+address_len = len("Calle de las perras")
+print(address_len)
+
+# 10. Usa un tipo de dato forzado para declarar una variable phone, asegurÃ¡ndote de que siempre serÃ¡ un nÃºmero. Luego, cambia su valor a un nÃºmero diferente y verifica el tipo de la variable con type().
+
+phone = 223 
+phone = 588
+print(type(phone))
+
+
 
 
 
