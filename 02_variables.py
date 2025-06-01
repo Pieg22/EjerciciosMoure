@@ -24,6 +24,7 @@ concatenala con un texto que diga cuántos años tienes.
 """
 age = "31"
 print(" Tengo " + age + " años ")
+#Corrección : print(" Tengo " + str(age) +  " años ") sin volver a repetir el valor de age = "31"
 
 """3. Declara una variable booleana is_student que indique si
 eres estudiante o no. Usa True o False según corresponda
@@ -47,6 +48,8 @@ else:
 
 nombre = len("PereBerceroTrigell")
 print(nombre)
+
+#Corrección : full_name = "Brais Moure  print(len(full_name))"
 
 
 """5. Declara tres variables en una sola lÃ­nea que representen tu nombre, apellido y ciudad de origen. Luego, imprime estos valores."""
