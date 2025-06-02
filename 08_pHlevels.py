@@ -7,7 +7,7 @@ if ph_value > 7:
     print("Basic")
 if ph_value < 7:
     print("Acid")
-    
-else:
+
+if ph_value == 7:
     print("Neutral")
 
