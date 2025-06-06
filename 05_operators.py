@@ -25,7 +25,7 @@ print("Hola"*10)
 a = 12
 b = 8 
 
-resultado = bool(a>b)
+resultado = a > b
 
 print(resultado)
 
@@ -54,3 +54,4 @@ print(not(15>20)) #True
 
 calculo = 5*3
 print ( int(calculo) +2 > 10 and int(calculo) < 20 )
+
