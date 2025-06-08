@@ -10,6 +10,8 @@ print("Las mentorias \nson lo mejor")
 name, surname , age =  "Pere" , "Bercero Trigell" , 31
 # Interpreto que me pide .format o % 
 print("Mi nombre es %s %s y tengo %d años " %(name,surname,age))
+#O como la corrección indica
+print(f"Mi nombre es  {name} {surname} y tengo {age} años ")
 # 5. Desempaqueta los caracteres de la palabra â€œPythonâ€ en variables separadas y luego imprÃ­melos uno por uno. 
 print(len("Pyhton")) # Contamos los caracteres que tiene la palabra . 
 
@@ -27,11 +29,28 @@ print(f)
 
 palabra2 = "Programación" 
 
-palabra_slice = palabra2 [2:7] #[3:7]This only prints "gram", we want to print "ogram"
+palabra_slice = palabra2 [3:8] #[3:7]This only prints "gram", we want to print "grama"
 print(palabra_slice)
 
 # 7. Invierte la cadena â€œPythonâ€ usando slicing y muestra el resultado.
 
+reversed_language = palabra[::-1]
+print(reversed_language)
+ 
+# 8. Convierte la cadena â€œaprendiendo pythonâ€ en mayÃºsculas usando el mÃ©todo adecuado e imprÃ­mela.
+
+cadena = "aprendiendo python"
+print(cadena.upper()) 
+
+# 9. Cuenta cuÃ¡ntas veces aparece la letra â€œnâ€ en la cadena â€œProgramaciÃ³n en Pythonâ€.
+
+print(palabra .count("n"))
+print(palabra2 .count("n")) 
+
+# 10. Verifica si la cadena â€œ12345â€ es numÃ©rica usando el mÃ©todo adecuado e imprime el resultado.
+
+cadena_n = "12345"
+print (cadena_n.isnumeric())
 
 
 
