@@ -28,5 +28,22 @@ la3_lista = [1,2,3,4,5]
 elimination = la3_lista.pop()
 print(elimination)
 print(la3_lista)
+# 7. Invierte la lista [100, 200, 300, 400, 500] e imprÃ­mela.
+big = [100, 200, 300, 400, 500]
+big.reverse()
+print(big)
 
+# 8. Ordena la lista [3, 1, 4, 2, 5] en orden ascendente e imprÃ­mela.
 
+disorder = [3,1,4,2,5]
+disorder.sort()
+print(disorder)
+
+# 9. Concatena las listas [1, 2, 3] y [4, 5, 6] y almacena el resultado en una nueva lista. Imprime la lista resultante.
+unodostres = [1,2,3]
+cuatrocincoseis = [4,5,6]
+
+longlist = [unodostres, cuatrocincoseis]
+print(longlist)
+
+# 10. Crea una sublista con los elementos de la lista [10, 20, 30, 40, 50] que van desde la posiciÃ³n 1 hasta la 3 (sin incluir la posiciÃ³n 3).
