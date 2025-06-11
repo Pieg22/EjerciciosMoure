@@ -47,3 +47,9 @@ longlist = [unodostres, cuatrocincoseis]
 print(longlist)
 
 # 10. Crea una sublista con los elementos de la lista [10, 20, 30, 40, 50] que van desde la posiciÃ³n 1 hasta la 3 (sin incluir la posiciÃ³n 3).
+# It calls : la_lista , but la_lista have many changes already , so I do a new list ofc
+
+la4_lista = [10,20,30,40,50]
+print(la4_lista[1:3])
+
+
