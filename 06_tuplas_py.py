@@ -1,34 +1,4 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": [],
-      "authorship_tag": "ABX9TyOmHt6beRzGo8U+PlTPp1jC",
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/Pieg22/EjerciciosMoure/blob/master/06_tuplas_py.py\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
+
         "# 1. Crea una tupla con los valores (10, 20, 30, 40, 50) e imprÃ­mela.\n",
         "\n",
         "tuple_1 = (10, 20, 30, 40, 50)\n",
@@ -86,30 +56,4 @@
         "\n",
         "\n",
         "\n"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "JTeIMVjYzgGf",
-        "outputId": "b5c091cc-6c99-4090-9a14-073d466e097c"
-      },
-      "execution_count": 6,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "(10, 20, 30, 40, 50)\n",
-            "300\n",
-            "3\n",
-            "1\n",
-            "(1, 2, 3, 4, 5, 6)\n",
-            "(30, 40)\n",
-            "<class 'tuple'>\n"
-          ]
-        }
-      ]
-    }
-  ]
-}
+     
