@@ -1,0 +1,33 @@
+
+     
+        "#Magic 8 ball :\n",
+        "\n",
+        "question = input(\" Ask me: \")\n",
+        "\n",
+        "import random\n",
+        "answer = random.randint(1, 9 )\n",
+        "\n",
+        "if answer == 1 :\n",
+        "  print(\"Yes - definitely.\")\n",
+        "\n",
+        "elif answer == 2 :\n",
+        "    print(\"It is decidedly so. \")\n",
+        "\n",
+        "elif answer == 3 :\n",
+        "    print(\"Without a doubt.\")\n",
+        "elif answer == 4 :\n",
+        "    print(\"Reply hazy , try again.\")\n",
+        "elif answer == 5 :\n",
+        "    print(\"Ask again later.\")\n",
+        "elif answer == 6 :\n",
+        "    print(\"Better not tell you now.\")\n",
+        "elif answer == 7 :\n",
+        "    print(\"My sources say no.\")\n",
+        "elif answer == 8 :\n",
+        "    print(\"Outlook not so good.\")\n",
+        "else:\n",
+        "    print(\"Very doubtful.\")"
+      ]
+    }
+  ]
+}
