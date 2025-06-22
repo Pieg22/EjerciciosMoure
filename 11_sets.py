@@ -37,7 +37,7 @@ fruit_list = list(fruit_set) #Convert de set to list
 #How to check It if set have not order , but list yes , so I think It works like usual list . 
 #print(fruit_list.pop(0))  # Wtf with same number It prints in random order . It do not care about the indication of number . 
 #Un set es como un saco de canicas , 0 orden. 
-#fruit_list.sort() #Now it have order ! 
+fruit_list.sort() #Now it have order ! 
 print(fruit_list[0])
 
 # 8. Realiza la uniÃ³n de dos sets: {1, 2, 3} y {4, 5, 6}, e imprime el set resultante.
@@ -58,6 +58,7 @@ print(diference)
 my_set = {"Pepe"}
 del(my_set)
 print(my_set) #It explote ! " name 'my_set' is not defined ofc "
+
 
 
 
