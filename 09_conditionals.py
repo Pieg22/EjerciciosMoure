@@ -22,3 +22,8 @@ else:
     print("You do not exist")
 
 # 3. Escribe un programa que verifique si una cadena de texto estÃ¡ vacÃ­a y muestre un mensaje en consecuencia.
+cadena = "Esto no esta vacío"
+if not cadena  :
+    print("Esto esta vacío")
+elif cadena  :
+    print("This is not empty")
