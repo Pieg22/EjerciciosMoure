@@ -26,4 +26,20 @@ cadena = "Esto no esta vacío"
 if not cadena  :
     print("Esto esta vacío")
 elif cadena  :
-    print("This is not empty")
+    print("This is not empty") 
+
+    
+# 4. Crea un programa que solicite dos nÃºmeros al usuario y compare cuÃ¡l es mayor. Si son iguales, muestra un mensaje indicando la igualdad.
+
+dime1 = input("Write one number : ")
+dime2 = input("Tell me another number : ")
+
+if dime1 > dime2 :
+    print(f"{dime1} es mayor que {dime2}")
+elif dime1 == dime2:
+    print(f"{dime1} is equal to {dime2}")
+else:
+    print(f"{dime1} is lower than {dime2}")
+
+# 5. Escribe un programa que verifique si un nÃºmero es divisible por 3 y por 5 al mismo tiempo. 
+
