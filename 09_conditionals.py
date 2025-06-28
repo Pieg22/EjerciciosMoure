@@ -42,8 +42,8 @@ elif dime1 < dime2 :
     print(f"{dime1} is lower than {dime2}")
 
 # 5. Escribe un programa que verifique si un nÃºmero es divisible por 3 y por 5 al mismo tiempo. 
-#import random 
-numero_div =  9    #random.randint(1 , 15)
+import random 
+numero_div = random.randint(1 , 15)
 
 if numero_div % 3 == 0 and numero_div % 5 == 0 :
     print(f"{numero_div} is divisible of three and five")
