@@ -43,12 +43,36 @@ elif dime1 < dime2 :
 
 # 5. Escribe un programa que verifique si un nÃºmero es divisible por 3 y por 5 al mismo tiempo. 
 import random 
-numero_div = random.randint(1 , 15)
+numero_div = random.randint(1 , 60)
 
 if numero_div % 3 == 0 and numero_div % 5 == 0 :
     print(f"{numero_div} is divisible of three and five")
 elif numero_div % 3 != 0 and numero_div % 5 != 0 : 
     print(f"This {numero_div} is not divisible for both numbers")
+
+# 6. Solicita al usuario que ingrese un nÃºmero y verifica si es par o impar.
+
+solicito = input("Let me see that number : ")
+numerasao = int(solicito)
+
+if numerasao % 2 == 0 :
+    print("Pair number")
+elif numerasao % 2 != 0 :
+    print("This is odd number")
+
+# 7. Escribe un programa que determine si una persona puede votar en funciÃ³n de su edad(mayor o igual a 18). Si tiene 16 o 17 aÃ±os, indica que puede votar con permiso especial.
+check_age = input("Cual es su edad ?")
+age_confirm = int(check_age)
+
+if age_confirm >= 18 :
+    print("This person can vote")
+elif age_confirm <= 17 and age_confirm >= 16 :
+    print("This person can vote with special permission")
+else:
+    print("This person can not vote")
+
+# 8. Crea un programa que solicite una contraseÃ±a al usuario y verifique si coincide con una contraseÃ±a predefinida. Si no coincide, muestra un mensaje de error.
+
 
 
 
