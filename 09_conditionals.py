@@ -98,6 +98,16 @@ elif numerito == 20 :
 
 # 10. Escribe un programa que simule un semÃ¡foro: solicita al usuario que ingrese un color(rojo, amarillo, verde) y muestra un mensaje indicando si debe detenerse, estar alerta o avanzar.
 
+situation = input("Wich color have traffic light?(red, yellow , green) ")
+rojo = "red"
+amarillo = "yellow"
+verde = "green"
 
-
-
+if situation == rojo :
+    print("Do not pass")
+elif situation == amarillo :
+    print("Be careful, watch the way out") 
+elif situation == verde :
+    print("You can pass")
+else : 
+    print("Wrong input")
