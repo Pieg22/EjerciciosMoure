@@ -30,9 +30,10 @@ elif cadena  :
 
     
 # 4. Crea un programa que solicite dos nÃºmeros al usuario y compare cuÃ¡l es mayor. Si son iguales, muestra un mensaje indicando la igualdad.
-
-dime1 = input("Write one number : ")
-dime2 = input("Tell me another number : ")
+p1 = input("Write one number : ")
+p2 = input("Tell me another number : ")
+dime1 = int(p1)
+dime2 = int(p2)
 
 if dime1 > dime2 :
     print(f"{dime1} es mayor que {dime2}")
@@ -40,6 +41,8 @@ elif dime1 == dime2:
     print(f"{dime1} is equal to {dime2}")
 elif dime1 < dime2 :
     print(f"{dime1} is lower than {dime2}")
+# I saw error after do the exercice and I will be : When I wrote a big number than 99 , like dime1 = 99  and dime2 = 100 , the program execute the last elif . And the error was , because I did not do the viariable 
+# transforming on int().. :) So now It work on right way!
 
 # 5. Escribe un programa que verifique si un nÃºmero es divisible por 3 y por 5 al mismo tiempo. 
 import random 
@@ -52,7 +55,7 @@ elif numero_div % 3 != 0 and numero_div % 5 != 0 :
 
 # 6. Solicita al usuario que ingrese un nÃºmero y verifica si es par o impar.
 
-solicito = input("Let me see that number : ")
+solicito = input( "Let me see that number : ")
 numerasao = int(solicito)
 
 if numerasao % 2 == 0 :
@@ -72,6 +75,28 @@ else:
     print("This person can not vote")
 
 # 8. Crea un programa que solicite una contraseÃ±a al usuario y verifique si coincide con una contraseÃ±a predefinida. Si no coincide, muestra un mensaje de error.
+password = "123moure456" 
+
+introduce_pass = input("Write here your password : ")
+
+if introduce_pass == password :
+    print("Correct acces")
+elif introduce_pass != password :
+    print("Error : wrong password") 
+
+# 9. Escribe un programa que determine si un nÃºmero estÃ¡ entre 10 y 20 (ambos incluidos).
+#I try to avail the program of exercice 5 for this one too! We will see what happens 
+#So the try was fail . why ? I must do a new variable just for this program ofc. 
+import random
+numerito = random.randint(1 , 30)
+if numerito >= 10 and numerito <=20 :
+    print(f"{numerito} is betwen teen and twenty")
+elif numerito == 10 :
+    print(f"{numerito} is teen")
+elif numerito == 20 :
+    print(f"{numerito} is twenty")
+
+# 10. Escribe un programa que simule un semÃ¡foro: solicita al usuario que ingrese un color(rojo, amarillo, verde) y muestra un mensaje indicando si debe detenerse, estar alerta o avanzar.
 
 
 
