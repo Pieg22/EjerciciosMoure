@@ -3,9 +3,9 @@
 import random
 numero = random.randint(-10, 10)
 
-if numero >= 0.1: 
-    print("Es positivo")
-elif numero <= -0.1:
+if numero >= 0.1:               #Correction . number > 0 
+    print("Es positivo")          
+elif numero <= -0.1:            # number <0 
     print("Is negative")
 else :
     print("Es cero")
@@ -22,7 +22,7 @@ else:
     print("You do not exist")
 
 # 3. Escribe un programa que verifique si una cadena de texto estÃ¡ vacÃ­a y muestre un mensaje en consecuencia.
-cadena = "Esto no esta vacío"
+cadena = "Esto no esta vacío"  
 if not cadena  :
     print("Esto esta vacío")
 elif cadena  :
@@ -31,9 +31,9 @@ elif cadena  :
     
 # 4. Crea un programa que solicite dos nÃºmeros al usuario y compare cuÃ¡l es mayor. Si son iguales, muestra un mensaje indicando la igualdad.
 p1 = input("Write one number : ")
-p2 = input("Tell me another number : ")
-dime1 = int(p1)
-dime2 = int(p2)
+p2 = input("Tell me another number : ")      #Better like 
+dime1 = int(p1)                              #number1 = int(input("Introduce el primer nÃºmero: "))
+dime2 = int(p2)                              #number2 = int(input("Introduce el segundo nÃºmero: "))
 
 if dime1 > dime2 :
     print(f"{dime1} es mayor que {dime2}")
@@ -65,11 +65,11 @@ elif numerasao % 2 != 0 :
 
 # 7. Escribe un programa que determine si una persona puede votar en funciÃ³n de su edad(mayor o igual a 18). Si tiene 16 o 17 aÃ±os, indica que puede votar con permiso especial.
 check_age = input("Cual es su edad ?")
-age_confirm = int(check_age)
+age_confirm = int(check_age)                                    #age 
 
 if age_confirm >= 18 :
     print("This person can vote")
-elif age_confirm <= 17 and age_confirm >= 16 :
+elif age_confirm <= 17 and age_confirm >= 16 :                  # Interessting way elif 16 <= age < 18:
     print("This person can vote with special permission")
 else:
     print("This person can not vote")
@@ -95,7 +95,8 @@ elif numerito == 10 :
     print(f"{numerito} is teen")
 elif numerito == 20 :
     print(f"{numerito} is twenty")
-
+else:
+    print(f"{numerito} Is not be betwen teen and twenty ")
 # 10. Escribe un programa que simule un semÃ¡foro: solicita al usuario que ingrese un color(rojo, amarillo, verde) y muestra un mensaje indicando si debe detenerse, estar alerta o avanzar.
 
 situation = input("Wich color have traffic light?(red, yellow , green) ")
@@ -111,3 +112,5 @@ elif situation == verde :
     print("You can pass")
 else : 
     print("Wrong input")
+
+
