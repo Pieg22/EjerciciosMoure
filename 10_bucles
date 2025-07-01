@@ -1,0 +1,48 @@
+#Bucles#  
+
+
+# 1. Usa un bucle while para imprimir los nÃºmeros del 1 al 10.
+ 
+number_one = 1 
+
+while number_one :
+    print(number_one)
+    number_one += 1
+
+    if number_one == 11:
+        print("Hasta aquí!")
+        break
+
+# 2. Usa un bucle for para recorrer la lista[10, 20, 30, 40, 50] e imprime cada nÃºmero.
+numeric_list = [10, 20, 30, 40, 50]
+
+for element in numeric_list:
+    print(element)
+
+# 3. Escribe un programa que use un bucle while para sumar los nÃºmeros del 1 al 100 e imprime el resultado.
+#I do understand , about It demand , do the sum of all numbers betwen 1 to 100 . 
+#Add the list of all numbers from 1 to 100.
+
+resultado =  1
+
+while resultado < 100: 
+    resultado += 1
+    print(resultado)
+
+# 4. Escribe un bucle for que imprima cada carÃ¡cter de la cadena "Python".
+
+word = "Python"
+
+for element in word :
+    print(element)
+
+# 5. Usa un bucle while para encontrar el primer nÃºmero divisible por 7 entre 1 y 50.
+
+siete = 7 
+
+while siete : 
+    siete % 
+
+    
+    
+
