@@ -37,11 +37,77 @@ for element in word :
     print(element)
 
 # 5. Usa un bucle while para encontrar el primer nÃºmero divisible por 7 entre 1 y 50.
-
+#I need 3 variables : number seven , the list of 1 to 50 and the operation of it
 siete = 7 
+one_fifthy = list(range(1, 51))
+result =siete / len(one_fifthy)
 
-while siete : 
-    siete % 
+while siete %  len(one_fifthy) != 0: 
+    siete % len(one_fifthy)  == 0 
+
+    
+    break
+##
+i = 1
+while i <= 50:
+    if i % 7 == 0:
+        print(i)
+        break
+    i += 1
+
+
+# 6. Usa un bucle for para recorrer el diccionario {"name": "Brais", "age": 37, "country": "Galicia"} e imprime las claves.
+
+dictionary = {"name": "Brais", "age": 37, "country": "Galicia"}
+
+for key in dictionary :
+    print(key)
+    
+# 7. Escribe un programa que use un bucle while para imprimir los nÃºmeros pares entre 1 y 20 . 
+
+one_twenty = list(range(1, 21))
+
+while one_twenty :
+    print(one_twenty)
+    break
+
+# 8. Usa un bucle for con la funciÃ³n range() para imprimir los nÃºmeros del 1 al 10 en orden inverso. 
+
+for element in reversed(range(1, 11)):
+    print(element)
+
+# 9. Escribe un programa que use un bucle for para contar cuÃ¡ntas veces aparece el nÃºmero 30 en la lista[30, 10, 30, 20, 30, 40].
+treinta = [30, 10, 30, 20, 30, 40]
+treinta_count = 0
+for number in treinta : 
+    if number == 30:
+        treinta_count +=1
+print(treinta_count)     # This is like to make a list.conunt() , but manually I think hahhahah 
+
+# 10. Usa un bucle for para recorrer una lista de nombres y detener el bucle cuando se encuentre el nombre "Brais".
+
+nombres = ["Pepe", "Forajido" , "Jhon", "Brais" , "Jesucrist"]
+
+for element in nombres :
+   if element == "Brais" :
+    print(element)
+
+    
+
+
+    
+    
+    
+     
+        
+     
+
+    
+    
+
+
+    
+    
 
     
     
