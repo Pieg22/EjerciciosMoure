@@ -9,58 +9,49 @@ while number_one :
     print(number_one)
     number_one += 1
 
-    if number_one == 11:
+    if number_one == 11:      # No need this part actually
         print("Hasta aquí!")
         break
 
 # 2. Usa un bucle for para recorrer la lista[10, 20, 30, 40, 50] e imprime cada nÃºmero.
 numeric_list = [10, 20, 30, 40, 50]
 
-for element in numeric_list:
+for element in numeric_list: #In the correctin he use number instead of element
     print(element)
 
 # 3. Escribe un programa que use un bucle while para sumar los nÃºmeros del 1 al 100 e imprime el resultado.
 #I do understand , about It demand , do the sum of all numbers betwen 1 to 100 . 
 #Add the list of all numbers from 1 to 100.
 
-resultado =  1
-
-while resultado < 100: 
+resultado =  1                  
+sum = 0 #Correction 
+while resultado <= 100: 
+    sum += resultado #Correction
     resultado += 1
-    print(resultado)
+print(sum)  # It is sum instead of resultado . 
 
 # 4. Escribe un bucle for que imprima cada carÃ¡cter de la cadena "Python".
 
 word = "Python"
 
-for element in word :
+for element in word : #Correction use "for letter" not "for element"
     print(element)
 
 # 5. Usa un bucle while para encontrar el primer nÃºmero divisible por 7 entre 1 y 50.
 #I need 3 variables : number seven , the list of 1 to 50 and the operation of it
-siete = 7 
-one_fifthy = list(range(1, 51))
-result =siete / len(one_fifthy)
-
-while siete %  len(one_fifthy) != 0: 
-    siete % len(one_fifthy)  == 0 
-
-    
-    break
-##
-i = 1
-while i <= 50:
+i = 1        
+while i <= 50:        #All this is from the correction , because I did really wrong hahahah
     if i % 7 == 0:
         print(i)
         break
-    i += 1
+    i += 1 
 
 
 # 6. Usa un bucle for para recorrer el diccionario {"name": "Brais", "age": 37, "country": "Galicia"} e imprime las claves.
 
 dictionary = {"name": "Brais", "age": 37, "country": "Galicia"}
 
-for key in dictionary :
+for key in dictionary : 
     print(key)
     
 # 7. Escribe un programa que use un bucle while para imprimir los nÃºmeros pares entre 1 y 20 . 
@@ -92,11 +83,11 @@ for element in nombres :
    if element == "Brais" :
     print(element)
 
+
     
 
 
-    
-    
+
     
      
         
