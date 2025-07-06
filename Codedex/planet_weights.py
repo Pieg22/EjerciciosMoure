@@ -26,6 +26,54 @@ print(f"Information planets :{planets}")
 destination_planet = int(input("Write the planet destiny  here : ")) 
 
 #Conditions 
-#if destination_planet == 1 :
+
+if destination_planet == 1 :
+    print( earth_weight * planets["Mercury"]["Gravity"] )
+elif destination_planet == 2:
+    print( earth_weight * planets["Venus"]["Gravity"] )
+elif destination_planet == 3 :
+    print( earth_weight * planets["Mars"]["Gravity"] )
+elif destination_planet == 4 :
+    print( earth_weight * planets["Jupiter"]["Gravity"] )
+elif destination_planet == 5 :
+    print( earth_weight * planets["Saturn"]["Gravity"] )
+elif destination_planet == 6 :
+    print( earth_weight * planets["Uranus"]["Gravity"] )
+elif destination_planet == 7 :
+    print( earth_weight * planets["Neptune"]["Gravity"] )
+else:
+    print("Invalid planet number")
+    
+
+
+#After all this motivation , I will do de exercice  just with the if/elif/else. 
+
+
+#First Question
+earth_weight = float(input("How much do you weight ? "))
+#Second Question 
+
+destination_planet = int(input("Write the planet destiny  here : ")) 
+
+#Conditions 
+
+if destination_planet == 1 :
+     earth_weight * 0.38 
+elif destination_planet == 2:
+     earth_weight * 0.91 
+elif destination_planet == 3 :
+     earth_weight * 0.38 
+elif destination_planet == 4 :
+     earth_weight * 2.53 
+elif destination_planet == 5 :
+     earth_weight * 1.07 
+elif destination_planet == 6 :
+     earth_weight * 0.89 
+elif destination_planet == 7 :
+     earth_weight * 1.14 
+else:
+    print("Invalid planet number")
+
+    
     
 
