@@ -46,7 +46,7 @@ else:
     
 
 
-#After all this motivation , I will do de exercice  just with the if/elif/else. 
+#After all this motivation , I will do the exercice  just with the if/elif/else. 
 
 
 #First Question
