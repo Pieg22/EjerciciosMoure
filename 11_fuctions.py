@@ -55,9 +55,12 @@ def count_characters(str):
 
 # 10. Escribe una funciÃ³n llamada "display_messages" que reciba un nÃºmero indefinido de cadenas y las imprima en mayÃºsculas, una por una, tal como se hizo en el archivo proporcionado.
 
-def display_messages(str):
-    
+def display_messages(*message):
+    for messages in message : 
+        print(messages(str.upper))
 
+   
+    
 
 
 
