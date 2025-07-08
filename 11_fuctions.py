@@ -13,7 +13,8 @@ def personalized_greeting(name="unkown"):
 
 def multiply(number_one, number_two) :
 
-    print(number_one * number_two)
+    print(number_one * number_two)       #def multiply(a, b):
+                                         #return a * b , easy peasy! 
 
 multiply(5, 18)
 
@@ -23,16 +24,21 @@ def is_even(number):
    return number % 2 == 0
 
 # 4. Escribe una funciÃ³n llamada "convert_to_uppercase" que reciba una cadena de texto y la retorne en mayÃºsculas.
-def convert_to_uppercase(str):
-    return str.upper()
+def convert_to_uppercase(str):  #It must be convert_to_uppercase(text) , is non recomendable use ! Because str is a fundamental data , and It can make problems ! 
+    return str.upper()          
 
 # 5. Crea una funciÃ³n llamada "arbitrary_sum" que reciba un nÃºmero arbitrario de nÃºmeros como argumentos y retorne la suma de todos ellos.
-def arbitrary_sum(a,b):
+#def arbitrary_sum(a,b):   #Esta mal , ya que he limitado la operación a dos números y no es lo que pide el ejercicio ofc.
     sum = a + b
     return  sum
+#Correction : 
+def arbitrary_sum(*numbers): # De esta manera el parámetro *numbers  puede recibir un número variable de argumentos.The key on this exercice is on the * (*argument) . 
+    return sum(numbers)      # sum() will sum all the elements in *numbers 
+
+
 # 6. Escribe una funciÃ³n llamada "generate_full_greeting" que reciba dos argumentos: nombre y apellido, y retorne el saludo completo "Hola, <nombre> <apellido>". Los argumentos deben ser pasados por clave.
 
-def generate_full_greeting(name:"Unknown", surname:"Unkwnown"):
+def generate_full_greeting(name, surname):
     return (f"Hola , {name} {surname}")
 
 # 7. Crea una funciÃ³n llamada "power" que reciba dos nÃºmeros: base y exponente, y retorne el resultado de elevar la base al exponente.
@@ -46,6 +52,7 @@ def calculate_average(a, b, c):
     calculate = a+b+c
     average = calculate/3
     return average 
+#Short mod of do this : return (a + b + c) / 3
 
 
 # 9. Crea una funciÃ³n llamada "count_characters" que reciba una cadena de texto y retorne el nÃºmero de caracteres que contiene.
@@ -57,7 +64,7 @@ def count_characters(str):
 
 def display_messages(*message):
     for messages in message : 
-        print(messages(str.upper))
+        print(messages(str.upper)) # print(message.upper()) Correction ofc. 
 
    
     
