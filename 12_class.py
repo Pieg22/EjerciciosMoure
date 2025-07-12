@@ -12,7 +12,7 @@ class Animal :
 perro = Animal( "mamifero","Guau miau") #Make the object from animal clas
 print(perro.make_sound)
 
-especie = Animal()     #This is another object ofc 
+   
 print(Animal.make_sound)
 
 # 3. Crea una clase llamada "Car" con las propiedades pÃºblicas "brand" y "model". AdemÃ¡s, debe tener una propiedad privada "_speed" que inicialmente serÃ¡ 0.
@@ -20,23 +20,77 @@ print(Animal.make_sound)
 class Car:
     def __init__(self,brand,model):    # Fuction/metod + constructor + parameters 
         self.speed = speed             # Atributo
-    def accelerate(self):
-        accelerate = speed + 10 
-        brake = speed - 10
-    
+        self.brand = brand
+        self.model = model
+    def accelerate(self):              #metod
+        accelerate = speed + 10        #atributo 
+        brake = speed - 10(max(0))     #Atributo
+       
 
 speed = 0                              #Object
-if speed < 0 :
-    sum(speed + 10 )
+
 
 # 5. Crea una clase "Book" que tenga propiedades como "title" (pÃºblico) y "author" (privado). AÃ±ade un mÃ©todo para obtener el autor y otro para cambiar el tÃ­tulo del libro.
 class Book :
-    def __init__(self, title):
-        author = author
-        self.title = title
+    def __init__(self, title, author):
+        self.title = title 
+        self.author = author
+    def obtain_author(self):
+        return self.obtain_author
+    def change_title(self):
+        self.title = new_title
+    
+        
+        
 
-        pass
+title = input("Change the title: " )    
 
+# 6. Crea una clase "Estudiante" que tenga como propiedades su nombre, apellido y una lista de notas. AÃ±ade un mÃ©todo para calcular y devolver la nota media del estudiante.
+class Student :
+    def __init__(self, name , surname , notes):
+        self.name = name
+        self.surname = surname
+        self.notes = notes
+
+    def media(self):
+        return self.notes / len(self.notes)
+
+        
+# 7. Crea una clase "BankAccount" con propiedades como "owner" y "balance". AÃ±ade mÃ©todos para depositar y retirar dinero, asegurÃ¡ndote de que no se pueda retirar mÃ¡s de lo que hay en la cuenta.
+class BankAccount :
+    def __init__(self, owner , balance):
+        self.owner = owner
+        self.balance = balance
+    def insert_money(self):
+        self.insert_money
+    def with_draw_money(self):
+        self.with_draw_money
+        max(self.balance)
+    
+
+# 8. Crea una clase "Point" que represente un punto en el espacio 2D con coordenadas "x" e "y". AÃ±ade un mÃ©todo que calcule la distancia entre dos puntos.
+class Point:
+    def __init__(self,x,x1,y,y1):
+        self.x = x
+        self.x1 = x1
+        self.y = y
+        self.y1 = y1
+    def distance_calculation(self,calculation):
+        import math
+        self.distance_calculation 
+        self.calculation = math.sqrt((self.x1 - self.x)**2 + (self.y1 - self.y2)**2)
+        print(self.calculation)
+
+# 9. Crea una clase "Employee" que tenga propiedades como "name", "hourly_wage" (pago por hora) y "hours_worked". AÃ±ade un mÃ©todo que calcule el pago total basado en las horas trabajadas y el salario por hora.
+
+
+
+
+        
+        
+
+
+  
 
 
 
