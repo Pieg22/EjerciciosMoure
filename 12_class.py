@@ -13,7 +13,7 @@ perro = Animal( "mamifero","Guau miau") #Make the object from animal clas
 print(perro.make_sound)
 
    
-print(Animal.make_sound)
+
 
 # 3. Crea una clase llamada "Car" con las propiedades pÃºblicas "brand" y "model". AdemÃ¡s, debe tener una propiedad privada "_speed" que inicialmente serÃ¡ 0.
 # 4. AÃ±ade a la clase "Car" un mÃ©todo llamado "accelerate" que aumente la velocidad en 10 unidades. AÃ±ade tambiÃ©n un mÃ©todo "brake" que reduzca la velocidad en 10 unidades. AsegÃºrate de que la velocidad no sea negativa.
@@ -22,9 +22,10 @@ class Car:
         self.speed = speed             # Atributo
         self.brand = brand
         self.model = model
-    def accelerate(self):              #metod
-        accelerate = speed + 10        #atributo 
-        brake = speed - 10(max(0))     #Atributo
+    def velocity(self):              #metod
+        self.accelerate = speed + 10        #atributo 
+        self.brake = speed - 10
+        speed.min(0)     
        
 
 speed = 0                              #Object
@@ -36,14 +37,16 @@ class Book :
         self.title = title 
         self.author = author
     def obtain_author(self):
-        return self.obtain_author
+        return self.author
     def change_title(self):
+        new_title = input("Change the title: " )  
         self.title = new_title
+
     
         
         
 
-title = input("Change the title: " )    
+  
 
 # 6. Crea una clase "Estudiante" que tenga como propiedades su nombre, apellido y una lista de notas. AÃ±ade un mÃ©todo para calcular y devolver la nota media del estudiante.
 class Student :
@@ -77,13 +80,39 @@ class Point:
         self.y1 = y1
     def distance_calculation(self,calculation):
         import math
-        self.distance_calculation 
-        self.calculation = math.sqrt((self.x1 - self.x)**2 + (self.y1 - self.y2)**2)
+        self.calculation = calculation
+        calculation = math.sqrt((self.x1 - self.x)**2 + (self.y1 - self.y2)**2)
         print(self.calculation)
 
 # 9. Crea una clase "Employee" que tenga propiedades como "name", "hourly_wage" (pago por hora) y "hours_worked". AÃ±ade un mÃ©todo que calcule el pago total basado en las horas trabajadas y el salario por hora.
 
+class Employee : 
+    def __init__(self,name,hourly_wage,hours_worked):
+        self.name = name
+        self.hourly_wage = hourly_wage
+        self.hours_worked = hours_worked
+    def calculation(self,total_pay):
+        self.total_pay = total_pay
+        total_pay = self.hourly_wage * self.hours_worked
+        print(total_pay)
 
+# 10. Crea una clase "Store" que tenga una propiedad "inventory" (una lista de productos). AÃ±ade un mÃ©todo para agregar un producto al inventario y otro para mostrar todos los productos disponibles.
+
+class Store:                 #Making the new mold
+    def __init__(self):      #Fuction / metod + consctructor 
+        self.inventory = []  #This is a empty list
+    def add_product_to_inventory(self):          #Fuction for add product
+        new_product = input("Add a new prodcut to the inventory : ")  #Introduce de name of product 
+        self.inventory.append(new_product)                            # Adding the product 
+        print(f"The product {new_product} has been added to inventory") #Finaly product it's in ! 
+    def show_inventory_products(self):
+        print(f"This is all the products : {self.inventory}")
+     
+
+
+
+
+        
 
 
         
