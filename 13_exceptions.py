@@ -44,7 +44,7 @@ try :
     divison1 = ask / ask2
     multi = ask * ask2
     print(f"The sum is {sum} , rest is {rest} , the division is {divison1} and multiplication is {multi}")
-except  : 
+except ZeroDivisionError: 
     ask2 == 0
     print(f"{ask2} is not possible make division with this denominator ")
     print(f"The sum is {sum} , rest is {rest} , the division Non-viable and multiplication is 0")
@@ -55,6 +55,20 @@ finally :
     print("I hope it will works well ahhahaha") 
 
 # 5. Crea una funciÃ³n que le pida al usuario su edad y lance un ValueError si la entrada no es un nÃºmero entero positivo. Usa el manejo de excepciones para gestionar la entrada y lanzar excepciones personalizadas cuando sea necesario.
+
+
+
+try : 
+    askAge = input("Write here your age please : " )  # Ask the age 
+    age = int(askAge)      
+    if age < 0 :
+        raise ValueError ("The number can't be negative")                
+except ValueError as age :   
+    print(f"Error:{age}. Introduce a positive number please")
+else:
+    print(f"You have {age} years old" )
+                                    
+       
 
 
 
