@@ -67,6 +67,31 @@ except ValueError as age :
     print(f"Error:{age}. Introduce a positive number please")
 else:
     print(f"You have {age} years old" )
+
+# 6. Crea una funciÃ³n que intente acceder a un elemento de una lista por Ã­ndice. Usa try-except para manejar el caso donde el Ã­ndice estÃ© fuera de rango.
+#So first we need to make the list ofc . 2 : we need to make the access to this list with the Index . 3: Make the try and exception for detect when the index is out of range . Now how I do this ? lol . 
+
+    theList = [1,2,3,4,5]
+def access(acces):
+   acces = input("For wich element do you looking for ?  ")
+   return print(theList.pop())
+try: 
+    def access():
+     return print(theList.pop())
+except range:
+    print("This list just have 0 to 4 elements to acces It ") 
+
+
+
+
+
+# 7. Crea una funciÃ³n que use try-except para manejar mÃºltiples excepciones: ZeroDivisionError, ValueError y TypeError.
+
+# 8. Crea una funciÃ³n que simule una transacciÃ³n. Lanza una excepciÃ³n personalizada llamada InsufficientFundsError si el saldo es menor que la cantidad a retirar.
+
+# 9. Crea una funciÃ³n que intente convertir una lista de cadenas en enteros. Maneja cualquier error que surja cuando una cadena no pueda convertirse.
+
+# 10. Crea una funciÃ³n que calcule la raÃ­z cuadrada de un nÃºmero. Lanza un ValueError si el nÃºmero es negativo.
                                     
        
 
