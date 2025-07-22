@@ -72,20 +72,35 @@ else:
 #So first we need to make the list ofc . 2 : we need to make the access to this list with the Index . 3: Make the try and exception for detect when the index is out of range . Now how I do this ? lol . 
 
     theList = [1,2,3,4,5]
-def access(acces):
-   acces = input("For wich element do you looking for ?  ")
-   return print(theList.pop())
+def access():
+    indice = int(input("For wich element do you looking for ?  "))
+    return theList[indice]  # Aquí está la clave! Accedes al elemento por índice
+
+    
+    
 try: 
-    def access():
-     return print(theList.pop())
-except range:
-    print("This list just have 0 to 4 elements to acces It ") 
-
-
-
+   result = access() # Llama a la función y captura su resultado
+   print(f"The element at the given index is: {result}") # Imprime el resultado si no hay error 
+    
+except IndexError :
+    print("This list just have 0 to 4 elements to acces It ")  #Explota cuando pide un elemento no existente en la lista 
 
 
 # 7. Crea una funciÃ³n que use try-except para manejar mÃºltiples excepciones: ZeroDivisionError, ValueError y TypeError.
+#Make a simply calculation , no te motives ! 
+def calculos():
+    
+try :
+    result = calculos()
+except ZeroDivisionError :
+    print("Error : Denominator 0")
+except ValueError : 
+    print("")
+except TypeError : 
+    print("")
+
+    
+    
 
 # 8. Crea una funciÃ³n que simule una transacciÃ³n. Lanza una excepciÃ³n personalizada llamada InsufficientFundsError si el saldo es menor que la cantidad a retirar.
 
