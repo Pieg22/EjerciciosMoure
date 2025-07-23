@@ -88,21 +88,35 @@ except IndexError :
 
 # 7. Crea una funciÃ³n que use try-except para manejar mÃºltiples excepciones: ZeroDivisionError, ValueError y TypeError.
 #Make a simply calculation , no te motives ! 
-def calculos():
-    
+
+def diferent_calculo():
+    un_calculo = 10*2
+    print(un_calculo)
+   
+   
 try :
-    result = calculos()
+    result = diferent_calculo()
 except ZeroDivisionError :
     print("Error : Denominator 0")
 except ValueError : 
-    print("")
+    print("The value is not correct")
 except TypeError : 
-    print("")
-
-    
-    
+    print("The type of data is incorrect")
 
 # 8. Crea una funciÃ³n que simule una transacciÃ³n. Lanza una excepciÃ³n personalizada llamada InsufficientFundsError si el saldo es menor que la cantidad a retirar.
+def transaction(amount):
+    amount = 10
+    payer =  amount - 5
+    paid = amount + 5 
+try : 
+    transaction()
+except InsufficientFundsError :
+    
+    
+
+
+
+
 
 # 9. Crea una funciÃ³n que intente convertir una lista de cadenas en enteros. Maneja cualquier error que surja cuando una cadena no pueda convertirse.
 
