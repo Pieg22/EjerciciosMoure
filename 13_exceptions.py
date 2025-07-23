@@ -104,13 +104,31 @@ except TypeError :
     print("The type of data is incorrect")
 
 # 8. Crea una funciÃ³n que simule una transacciÃ³n. Lanza una excepciÃ³n personalizada llamada InsufficientFundsError si el saldo es menor que la cantidad a retirar.
-def transaction(amount):
-    amount = 10
-    payer =  amount - 5
-    paid = amount + 5 
-try : 
-    transaction()
-except InsufficientFundsError :
+class InsufficientFundsError():
+    def __init__(self):
+        ("Insufficient funds")
+        
+def transaccion(balance,amount):
+    if balance <= amount : 
+        print(f"Your amount is {amount}")
+    elif balance >= amount:
+        print("Extracting money...")
+try:
+    hayOno = transaccion(balance = 1,amount= 1)
+except: 
+    raise InsufficientFundsError("You can not extract It ")
+
+
+
+    
+    
+
+       
+
+    
+     
+
+
     
     
 
