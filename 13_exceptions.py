@@ -104,25 +104,29 @@ except TypeError :
     print("The type of data is incorrect")
 
 # 8. Crea una funciÃ³n que simule una transacciÃ³n. Lanza una excepciÃ³n personalizada llamada InsufficientFundsError si el saldo es menor que la cantidad a retirar.
-class InsufficientFundsError(Exception):
+
+class InsufficientFundsError(Exception): # Esta es una clase que define un nuevo tipo de error.
+    # Hereda de 'Exception', lo que la convierte en una excepción válida en Python.
     
     def __init__(self,message="Insufficient funds"):
         super().__init__(message)  
      
         
 def transaccion(balance,retirada):
-    retirada = 5
-    balance =  10
+   
     if balance < retirada :
-        raise InsufficientFundsError(" Your balance is lower than your demand")
+        raise InsufficientFundsError(" Your balance is lower than your demand") #¡Oye, aquí acaba de suceder un error de este tipo, detén lo que estás haciendo y busca a alguien que sepa manejarlo!".
     elif balance >= retirada:
         print("Extracting money...")
         existencial = balance - retirada
         print(f"you have {existencial} money left")
+        return existencial 
 try:
-    transaccion(balance= 10,retirada= 5)
-except InsufficientFundsError as e: 
-    raise InsufficientFundsError(" Your balance is lower than your demand")
+    transaccion(balance=10,retirada=5) # transaccion(balance=5, retirada=10) # ¡Esto lanzaría la InsufficientFundsError!
+except InsufficientFundsError as e: # 'as e' asigna la instancia de la excepción capturada a la variable 'e'.
+    raise InsufficientFundsError(f"ERROR:{e}")
+
+
 
 
 
