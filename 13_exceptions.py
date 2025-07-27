@@ -128,30 +128,23 @@ except InsufficientFundsError as e: # 'as e' asigna la instancia de la excepció
 
 
 
-
-
-
-
-    
-    
-
-       
-
-    
-     
-
-
-    
-    
-
-
-
-
-
 # 9. Crea una funciÃ³n que intente convertir una lista de cadenas en enteros. Maneja cualquier error que surja cuando una cadena no pueda convertirse.
+# 1 Make the list , 2 try to transform the list on int , 3 manage the possible errors with try , except ValueError or TypeError
+listilla = ["one","two","three","four"] 
 
+try : 
+    trans = int(listilla)
+except ValueError :
+    print("You can not transform text in to number")
+except TypeError : 
+    print("Incorrect Data")
 # 10. Crea una funciÃ³n que calcule la raÃ­z cuadrada de un nÃºmero. Lanza un ValueError si el nÃºmero es negativo.
-                                    
+import math
+
+try:
+    calculus = math.isqrt(-1)
+except ValueError : 
+    print("The number must be 0 till +∞")                  
        
 
 
