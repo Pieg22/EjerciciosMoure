@@ -48,12 +48,12 @@ def power(base, exponent):
 
 # 8. Escribe una funciÃ³n llamada "calculate_average" que reciba tres nÃºmeros y retorne su promedio.
 
+#Short mod of do this : return (a + b + c) / 3
+
 def calculate_average(a, b, c):
     calculate = a+b+c
     average = calculate/3
     return average 
-#Short mod of do this : return (a + b + c) / 3
-
 
 # 9. Crea una funciÃ³n llamada "count_characters" que reciba una cadena de texto y retorne el nÃºmero de caracteres que contiene.
 
