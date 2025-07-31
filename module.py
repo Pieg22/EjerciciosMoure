@@ -2,7 +2,7 @@
 
 # 1. Crea un mÃ³dulo llamado "calculator" que contenga funciones para sumar, restar, multiplicar y dividir dos nÃºmeros. Importa este mÃ³dulo en otro archivo y usa sus funciones.
 from calculator import calculadora # I did well , because now in the fuction everything is like print() but when it was variables + values ( sumas = a+b) It did not work . why? 
-calculadora(10 , 5)
+calculadora(10 , 5) 
 
 
 # 2. Crea un mÃ³dulo llamado "converter" que tenga funciones para convertir temperaturas entre Celsius y Fahrenheit. Escribe un programa que importe este mÃ³dulo y realice conversiones.
