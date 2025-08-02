@@ -54,9 +54,33 @@ class Car :
         
 
 # 7. Escribe un mÃ³dulo que contenga funciones para leer y escribir en archivos de texto. Crea un programa que use estas funciones para escribir y leer datos.
+#texto1.py
+def read_file(filename): #Here is the point where , we suppose introduce the txt file
+    with open(filename,'r') as file :  #use 'r' for read 
+        return file.read()
+    
+def writte_file(filename, content):
+    with open(filename, 'w') as file :
+        file.write(content)
+    
+
 
 # 8. Crea un mÃ³dulo llamado "statistics" que tenga funciones para calcular la media y la mediana de una lista de nÃºmeros. Usa este mÃ³dulo para calcular estos valores en una lista dada.
+#We will use here : statistics.mean ( para el promedio ) y statistics.median() para la mediana( valor central) . 
+lista_numbers = [1,2,2,3,4,5,5,7,7,8,8,8,9]
+def statistics ():
+    import statistics
+    calculo_average = statistics.mean(lista_numbers)
+    calculo_median = statistics.median(lista_numbers)
+    print(f"La media es {calculo_average} y la mediana {calculo_median}")
 
+statistics()    
+
+   
 # 9. Crea un mÃ³dulo que contenga una funciÃ³n para contar cuÃ¡ntas veces aparece una palabra en un texto. Escribe un programa que importe el mÃ³dulo y lo use para contar palabras en una cadena.
-
+#Here we can use .count() , it accept 2 optional parameters ofc  count(<sub>[, <start>[, <end>]]) . 
+def contador():
+    palabra = .count("ll")
+    return palabra
+    
 # 10 Crea un mÃ³dulo llamado "dates" que contenga funciones para obtener la fecha actual y calcular la diferencia entre dos fechas. Usa este mÃ³dulo en un programa para mostrar la fecha actual y la diferencia entre dos fechas especÃ­ficas.
