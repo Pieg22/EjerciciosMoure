@@ -79,8 +79,18 @@ statistics()
    
 # 9. Crea un mÃ³dulo que contenga una funciÃ³n para contar cuÃ¡ntas veces aparece una palabra en un texto. Escribe un programa que importe el mÃ³dulo y lo use para contar palabras en una cadena.
 #Here we can use .count() , it accept 2 optional parameters ofc  count(<sub>[, <start>[, <end>]]) . 
-def contador():
-    palabra = .count("ll")
+def contador(wordd):
+    palabra = wordd.count("me")
     return palabra
     
 # 10 Crea un mÃ³dulo llamado "dates" que contenga funciones para obtener la fecha actual y calcular la diferencia entre dos fechas. Usa este mÃ³dulo en un programa para mostrar la fecha actual y la diferencia entre dos fechas especÃ­ficas.
+#We will work with module of datatime  , following we make a variable wich value will be datetime.datetime.now() 
+import datetime
+def dates():
+ date_And_Time_Actual = datetime.datetime.now()  #es un objeto especial de Python que contiene información detallada sobre el año, mes, día, hora, minuto, segundo e incluso microsegundo.           
+ print(date_And_Time_Actual)
+ if date_And_Time_Actual                                              #Here we obtain the actual date n time ! 
+#Okay now we have the sketch real time . And now we must do the little calculation of , (now and future) , and( now and past) , (now and 4 dimension? ) XD 
+# So , future is actual is sum(+), and past is substract(-) , I'm not sure , I need looking for some philosophy explanation of time  . But I guess is on this way . 
+    
+
