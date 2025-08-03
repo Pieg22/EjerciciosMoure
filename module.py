@@ -85,12 +85,20 @@ def contador(wordd):
     
 # 10 Crea un mÃ³dulo llamado "dates" que contenga funciones para obtener la fecha actual y calcular la diferencia entre dos fechas. Usa este mÃ³dulo en un programa para mostrar la fecha actual y la diferencia entre dos fechas especÃ­ficas.
 #We will work with module of datatime  , following we make a variable wich value will be datetime.datetime.now() 
-import datetime
-def dates():
- date_And_Time_Actual = datetime.datetime.now()  #es un objeto especial de Python que contiene información detallada sobre el año, mes, día, hora, minuto, segundo e incluso microsegundo.           
- print(date_And_Time_Actual)
- if date_And_Time_Actual                                              #Here we obtain the actual date n time ! 
 #Okay now we have the sketch real time . And now we must do the little calculation of , (now and future) , and( now and past) , (now and 4 dimension? ) XD 
-# So , future is actual is sum(+), and past is substract(-) , I'm not sure , I need looking for some philosophy explanation of time  . But I guess is on this way . 
+# So , future is actual is sum(+), and past is substract(-) , I'm not sure , I need looking for some philosophy explanation of time  . But I guess is on this way .
+#We need to find something for calculate the dates , because 03/08/2025 is like a string isn't int or float , so we need to find , what we can do for handle it .
+# datetime.strptime() this is the key , we did looking for ! Now we must find the place for this ..  
+import datetime
+def dates(fecha_A_calcular):
+ date_And_Time_Actual = datetime.datetime.now()  #es un objeto especial de Python que contiene información detallada sobre el año, mes, día, hora, minuto, segundo e incluso microsegundo.           
+ print(date_And_Time_Actual)#Here we obtain the actual date n time ! 
+ formato_for_calculation = datetime.datetime()
+ if date_And_Time_Actual < formato_for_calculation:      
+     print("La fecha introducida pertenece al futuro")   
+ elif date_And_Time_Actual > formato_for_calculation:
+     print("For your information the date wich you introduce , belongs to the past") 
+
+ 
     
 
