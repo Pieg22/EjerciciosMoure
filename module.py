@@ -89,16 +89,42 @@ def contador(wordd):
 # So , future is actual is sum(+), and past is substract(-) , I'm not sure , I need looking for some philosophy explanation of time  . But I guess is on this way .
 #We need to find something for calculate the dates , because 03/08/2025 is like a string isn't int or float , so we need to find , what we can do for handle it .
 # datetime.strptime() this is the key , we did looking for ! Now we must find the place for this ..  
-import datetime
+#First try below here : 
+"""import datetime
 def dates(fecha_A_calcular):
  date_And_Time_Actual = datetime.datetime.now()  #es un objeto especial de Python que contiene información detallada sobre el año, mes, día, hora, minuto, segundo e incluso microsegundo.           
  print(date_And_Time_Actual)#Here we obtain the actual date n time ! 
- formato_for_calculation = datetime.datetime()
- if date_And_Time_Actual < formato_for_calculation:      
-     print("La fecha introducida pertenece al futuro")   
- elif date_And_Time_Actual > formato_for_calculation:
+ fecha_A_calcular = datetime.datetime.strftime("%d/%m/%Y") #Here we convert the value of principal argument , wich choice is from the user . And also we work with str on this case 
+ if date_And_Time_Actual < fecha_A_calcular :      
+     print("La fecha introducida pertenece al futuro")  
+     return "futuro"
+ elif date_And_Time_Actual > fecha_A_calcular :
      print("For your information the date wich you introduce , belongs to the past") 
-
+     return "pasado"
+ else: 
+     print("This date is super close to the currently date or equal")
+     return "current"""
  
+#Second try , with help of pair programming ofc : 
+from datetime import datetime                    
+def obtain_actual_date():       #This fuction give us the current date and time . 
+    return datetime.now().strftime("%d-%m-%Y")
+                                     #This is from the correction(.strftime)
+def comparation_dates(fecha_A_calcular1,fecha_A_calcular2):
+    date_And_Time_Actual = datetime.strptime(fecha_A_calcular2, "%d-%m-%Y") #1
+    date_To_compare = datetime.strptime(fecha_A_calcular1, "%d-%m-%Y") #0 
+
+    if date_To_compare < date_And_Time_Actual :      
+     print(f"La fecha {date_And_Time_Actual} pertenece al futuro")  
+     return "futuro"
+    elif date_To_compare > date_And_Time_Actual :
+     print(f"For your information {date_And_Time_Actual} wich you introduce , belongs to the past") 
+     return "pasado"
+    else: 
+     print("This date is super close to the currently date or equal")
+     return "current"
     
 
+
+
+ 
