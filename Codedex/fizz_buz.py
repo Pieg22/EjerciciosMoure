@@ -19,9 +19,7 @@ for element in range(0,101) :    #bucle for will do just the operation ones .
         
     break 
 
-while element :
-    for element / 3 in ZeroDivisionError :
-        print("N")
+
     
 
                   
